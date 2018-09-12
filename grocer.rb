@@ -53,7 +53,7 @@ def apply_coupons(cart, coupons)
   new_cart_dict
 end
 
-puts apply_coupons(cart_hash, []])
+puts apply_coupons(cart_hash, [])
 
 def apply_clearance(cart)
   
