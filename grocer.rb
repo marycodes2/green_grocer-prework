@@ -47,6 +47,7 @@ def apply_coupons(cart, coupons)
         new_cart_dict[new_item_name][:count] = 1
       elsif coupons == []
         puts "hello"
+      end 
     end
   end 
   new_cart_dict
