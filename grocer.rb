@@ -48,8 +48,9 @@ def apply_coupons(cart, coupons)
           new_cart_dict[new_item_name][:count] = 1
         end 
       end
-    end 
-    new_cart_dict
+    end
+  end
+  new_cart_dict
 end
 
 puts apply_coupons(cart_hash, coupon)
