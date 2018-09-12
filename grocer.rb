@@ -32,6 +32,7 @@ end
 
 def apply_coupons(cart, coupons)
   new_cart_dict = {}
+  if coupons  
   cart.each do |item, information_hash|
     coupons.each do |coupon|
       new_cart_dict[item] = information_hash
