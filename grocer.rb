@@ -33,23 +33,23 @@ end
 def apply_coupons(cart, coupons)
   new_cart_dict = {}
   if coupons  
-  cart.each do |item, information_hash|
-    coupons.each do |coupon|
-      new_cart_dict[item] = information_hash
-      if item == coupon[:item]
-        new_item_name = "#{item} W/COUPON"
-        number_of_items_leftover = cart[item][:count].to_i -     coupon[:num].to_i
-        new_cart_dict[item][:price] = cart[item][:price]
-        new_cart_dict[item][:clearance] = cart[item][:clearance]
-        new_cart_dict[item][:count] = number_of_items_leftover
-        new_cart_dict[new_item_name] = {}
-        new_cart_dict[new_item_name][:price] = coupon[:cost]
-        new_cart_dict[new_item_name][:clearance] = cart[item][:clearance]
-        new_cart_dict[new_item_name][:count] = 1
-      end 
-    end
-  end 
-  new_cart_dict
+    cart.each do |item, information_hash|
+      coupons.each do |coupon|
+        new_cart_dict[item] = information_hash
+        if item == coupon[:item]
+          new_item_name = "#{item} W/COUPON"
+          number_of_items_leftover = cart[item][:count].to_i -       coupon[:num].to_i
+          new_cart_dict[item][:price] = cart[item][:price]
+          new_cart_dict[item][:clearance] = cart[item][:clearance]
+          new_cart_dict[item][:count] = number_of_items_leftover
+          new_cart_dict[new_item_name] = {}
+          new_cart_dict[new_item_name][:price] = coupon[:cost]
+          new_cart_dict[new_item_name][:clearance] = cart[item][:clearance]
+          new_cart_dict[new_item_name][:count] = 1
+        end 
+      end
+    end 
+    new_cart_dict
 end
 
 puts apply_coupons(cart_hash, coupon)
