@@ -68,8 +68,6 @@ def apply_clearance(cart)
   cart
 end
 
-puts apply_clearance(cart_hash)
-
 def checkout(cart, coupons)
   # code here
 end
