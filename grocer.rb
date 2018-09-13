@@ -37,7 +37,7 @@ def apply_coupons(cart, coupons)
       num_of_coupons_applied_per_item[item] = 0
       new_cart_dict[item] = information_hash
       if coupons 
-        new_cart_dict[item][:count] = {}
+        new_cart_dict[item][:count] = 0 
         coupons.each do |coupon|
         if item == coupon[:item]
           num_of_coupons_applied_per_item[item] += 1
