@@ -11,7 +11,7 @@ cart_hash =    [
       {"SOY MILK" => {:price => 4.50, :clearance => true}}
     ]
 cart_hash =    [
-      {"BEER" => {:price => 13.00, :clearance => false}},
+    {"BEER" => {:price => 13.00, :clearance => false}},
     {"BEER" => {:price => 13.00, :clearance => false}},
     {"BEER" => {:price => 13.00, :clearance => false}}
     ]
