@@ -48,6 +48,7 @@ end
 
 def apply_coupons(cart, coupons)
   new_cart_dict = {}
+  items_covered_by_coupon = 0
   num_of_coupons_applied_per_item = {}
     cart.each do |item, information_hash|
       num_of_coupons_applied_per_item[item] = 0
