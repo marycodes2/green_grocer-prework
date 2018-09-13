@@ -1,8 +1,8 @@
-cart_hash = {
-  "PEANUTBUTTER" => {:price => 3.00, :clearance => true},
-  "KALE"         => {:price => 3.00, :clearance => false},
-  "SOY MILK"     => {:price => 4.50, :clearance => true}
-}
+cart_hash = [
+  {"AVOCADO" => {:price => 3.0, :clearance => true }},
+  {"AVOCADO" => {:price => 3.0, :clearance => true }},
+  {"KALE"    => {:price => 3.0, :clearance => false}}
+]
 
 coupon = [
     {:item => "AVOCADO", :num => 5, :cost => 5.00},
