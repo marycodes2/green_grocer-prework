@@ -66,7 +66,6 @@ end
 
 def checkout(cart, coupon)
   new_cart = consolidate_cart(cart)
-  puts new_cart.class
   new_cart = apply_coupons(new_cart, coupon)
   new_cart = apply_clearance(new_cart)
   grand_total = 0
