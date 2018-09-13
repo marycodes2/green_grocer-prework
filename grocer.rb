@@ -81,4 +81,4 @@ def checkout(cart: [], coupons: [])
   grand_total
 end
 
-checkout(cart_hash, coupons)
+checkout(cart_hash, coupon)
