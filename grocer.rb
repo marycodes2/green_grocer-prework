@@ -70,12 +70,12 @@ def checkout(cart, coupon)
   new_cart = consolidate_cart(cart)
   new_cart = apply_coupons(new_cart, coupon)
   puts new_cart.class
-  new_cart = apply_clearance(new_cart)
-  grand_total = 0
-  new_cart.each do |item, information_hash|
-    grand_total += new_cart[item][:price] * new_cart[item][:count]
-  end
-  grand_total
+  #new_cart = apply_clearance(new_cart)
+  #grand_total = 0
+  #new_cart.each do |item, information_hash|
+  #  grand_total += new_cart[item][:price] * new_cart[item][:count]
+  #end
+  #grand_total
 end
 
 checkout(cart_hash, coupon)
