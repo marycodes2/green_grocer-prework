@@ -62,7 +62,6 @@ def apply_clearance(cart)
     information_hash.each do |attribute, value|
       if attribute == :clearance and value == true 
         cart[item][:price] = (cart[item][:price] * 0.8).round(3)
-        puts cart[item][:price].class
       end
     end
   end
