@@ -71,6 +71,7 @@ def apply_coupons(cart, coupons)
       end
     end
   end 
+  end 
   new_cart_dict
 end
 
