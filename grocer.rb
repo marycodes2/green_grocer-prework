@@ -61,7 +61,7 @@ def apply_clearance(cart)
   cart.each do |item, information_hash|
     information_hash.each do |attribute, value|
       if attribute == :clearance and value == true 
-        car[item][:price] = cart[item][:price] * .2
+        cart[item][:price] = cart[item][:price] - (cart[item][:price] * .2)
 end
 
 def checkout(cart, coupons)
