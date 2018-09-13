@@ -10,6 +10,13 @@ cart_hash =    [
       {"BEETS" => {:price => 2.50, :clearance => false}},
       {"SOY MILK" => {:price => 4.50, :clearance => true}}
     ]
+cart_hash =    [
+      {"BEER" => {:price => 13.00, :clearance => false}},
+    {"BEER" => {:price => 13.00, :clearance => false}},
+    {"BEER" => {:price => 13.00, :clearance => false}}
+    ]
+
+
 
 coupon =     [
       {:item => "AVOCADO", :num => 2, :cost => 5.00},
