@@ -69,7 +69,6 @@ def apply_coupons(cart, coupons)
           new_cart_dict[new_item_name][:count] = num_of_coupons_applied_per_item[item]
         end 
       end
-    end 
     end
   end
   new_cart_dict
