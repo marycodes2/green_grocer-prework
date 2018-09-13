@@ -64,8 +64,6 @@ def apply_clearance(cart)
   cart
 end
 
-puts apply_clearance(cart_hash)
-
 def checkout(cart, coupon)
   new_cart = consolidate_cart(cart)
   puts new_cart.class
