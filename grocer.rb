@@ -45,9 +45,11 @@ def apply_coupons(cart, coupons)
           puts 'cart item count: ' + cart[item][:count].to_i.to_s
           puts 'coupon num: ' + coupon[:num].to_i.to_s
           new_cart_dict[item][:price] = cart[item][:price]
+          puts '2nd cart item count: ' + cart[item][:count].to_i.to_s
           new_cart_dict[item][:clearance] = cart[item][:clearance]
+          puts '3rd cart item count: ' + cart[item][:count].to_i.to_s
           new_cart_dict[item][:count] = number_of_items_leftover
-          puts 'second cart item count: ' + cart[item][:count].to_i.to_s
+          puts '4th cart item count: ' + cart[item][:count].to_i.to_s
           new_cart_dict[new_item_name] = {}
           new_cart_dict[new_item_name][:price] = coupon[:cost]
           new_cart_dict[new_item_name][:clearance] = cart[item][:clearance]
