@@ -1,10 +1,10 @@
 cart_hash = {
-  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 8},
+  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 14},
   "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
 }
 
 coupon = [
-    {:item => "AVOCADO", :num => 2, :cost => 5.00},
+    {:item => "AVOCADO", :num => 5, :cost => 5.00},
 		{:item => "AVOCADO", :num => 2, :cost => 5.00},
 		{:item => "CHEESE", :num => 3, :cost => 15.00}
 		]
