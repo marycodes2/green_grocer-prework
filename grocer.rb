@@ -4,11 +4,7 @@ cart_hash = [
   {"KALE"    => {:price => 3.0, :clearance => false}}
 ]
 
-coupon = [
-    {:item => "AVOCADO", :num => 5, :cost => 5.00},
-		{:item => "AVOCADO", :num => 2, :cost => 5.00},
-		{:item => "CHEESE", :num => 3, :cost => 15.00}
-		]
+coupon = {:item => "AVOCADO", :num => 2, :cost => 5.0}
 
 def consolidate_cart(cart)
   count_dict = {}
