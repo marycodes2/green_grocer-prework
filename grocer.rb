@@ -57,7 +57,7 @@ def apply_coupons(cart, coupons)
         coupons.each do |coupon|
         if item == coupon[:item]
           num_of_coupons_applied_per_item[item] += 1
-                    puts "number of coupons/item " + num_of_coupons_applied_per_item[item].to_s
+          puts "number of coupons/item " + num_of_coupons_applied_per_item[item].to_s
           new_item_name = "#{item} W/COUPON"
           number_of_items_leftover = new_cart_dict[item][:count].to_i - coupon[:num].to_i
           new_cart_dict[item][:price] = new_cart_dict[item][:price]
