@@ -38,10 +38,9 @@ def apply_coupons(cart, coupons)
       if coupons 
         coupons.each do |coupon|
           coupon_item_list << coupon[:item]
-        number_of_items_leftover = 0 
         if item == coupon[:item]
           new_item_name = "#{item} W/COUPON"
-          number_of_items_leftover = cart[item][:count].to_i -       coupon[:num].to_i
+          number_of_items_leftover = cart[item][:count].to_i - coupon[:num].to_i
           new_cart_dict[item][:price] = cart[item][:price]
           new_cart_dict[item][:clearance] = cart[item][:clearance]
           new_cart_dict[item][:count] = number_of_items_leftover
