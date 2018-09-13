@@ -32,10 +32,12 @@ end
 
 def apply_coupons(cart, coupons)
   new_cart_dict = {}
+  coupon_item_list= []
     cart.each do |item, information_hash|
       new_cart_dict[item] = information_hash
       if coupons 
         coupons.each do |coupon|
+          coupon_item_list << coupon[:item]
         number_of_items_leftover = 0 
         if item == coupon[:item]
           new_item_name = "#{item} W/COUPON"
