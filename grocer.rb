@@ -55,7 +55,7 @@ def apply_coupons(cart, coupons)
       new_cart_dict[item] = information_hash
       if coupons 
         coupons.each do |coupon|
-        if item == coupon[:item] and new_cart_dict[item][:count] < coupon[:num]
+        if item == coupon[:item] and new_cart_dict[item][:count].to_i < coupon[:num]
           num_of_coupons_applied_per_item[item] += 1
           new_item_name = "#{item} W/COUPON"
           number_of_items_leftover = new_cart_dict[item][:count].to_i - coupon[:num].to_i
@@ -70,7 +70,6 @@ def apply_coupons(cart, coupons)
       end
     end
   end 
-  end
   new_cart_dict
 end
 
