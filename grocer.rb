@@ -1,5 +1,5 @@
 cart_hash = {
-  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 5},
+  "AVOCADO" => {:price => 3.0, :clearance => true, :count => 7},
   "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
 }
 
