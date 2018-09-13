@@ -58,7 +58,9 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  
+  cart.each do |item, information_hash|
+    information_hash.each do |attribute, value|
+      if attribute == :
 end
 
 def checkout(cart, coupons)
