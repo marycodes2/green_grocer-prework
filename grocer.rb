@@ -67,8 +67,7 @@ def apply_clearance(cart)
   end
   cart
 end
-
-puts 0.8.class
+3.00.class
 
 def checkout(cart, coupons)
   # code here
