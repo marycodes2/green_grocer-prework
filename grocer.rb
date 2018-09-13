@@ -76,7 +76,8 @@ def checkout(cart, coupon)
   new_cart.each do |item, information_hash|
     grand_total += new_cart[item][:price] * new_cart[item][:count]
   end
-  
+  if grand_total > 100
+    grand_total = grand_total * 0.9
   grand_total
 end
 
